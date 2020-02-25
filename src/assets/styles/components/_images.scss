@@ -1,0 +1,7 @@
+.image {
+  &--rounded {
+    border-radius: 50%;
+    width: toRem(150px);
+    height: toRem(150px);
+  }
+}

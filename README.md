@@ -1,32 +1,20 @@
-# CtApp
+# NGX-base
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+This project is a core foundation for new projects.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone this repository by using ssh `git clone git@github.com:mrpharderwijk/ngx-base.git` or https `git clone https://github.com/mrpharderwijk/ngx-base.git`
 
-## Code scaffolding
+2. Open the `angular.json` file. Change the name of the app from `ngx-base` to `whatever-you-want-to-name-it`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Open the `package.json` file. Change the name of the package from `ngx-base` to `whatever-you-want-to-name-it`
 
-## Build
+4. Open the `custom-tslint.json` file. Change the `directive/component`-selector rules
+   from `ngx` to `whatever-you-want`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+5. Check the `assets/fonts`-folder and remove any fonts the app will not use
 
-## Running unit tests
+6. Run `npm install` to install dependencies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Setting up
-
-1. Change the name of the app in the `angular.json`-file `"outputPath": "dist/custom-app"` to whatever you need it to be
-2. Change the name of the app in the `server.js`-file to the correct destination folder
+You're good to go `npm run start:local` for the local configuration serve.

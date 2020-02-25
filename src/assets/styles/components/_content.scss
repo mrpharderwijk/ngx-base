@@ -1,0 +1,22 @@
+.content {
+  display: flex !important;
+
+  &--icon-label {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  &--center {
+    justify-content: center;
+  }
+
+  &__icon {
+    flex: 0 1 auto;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  &__label {
+    flex: 1 1 auto;
+    margin-left: 0.25rem;
+  }
+}

@@ -1,0 +1,19 @@
+.layers {
+  border-bottom: 1px solid rgba(0, 0, 0, .0625) !important;
+  &__layer {
+    border-top: 1px solid rgba(0, 0, 0, .0625) !important;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  &__label,
+  &__value {
+    flex: 1 1 50%;
+    font-size: toRem(21px);
+  }
+  &__value {
+    font-weight: 700;
+    text-align: right;
+  }
+}

@@ -1,0 +1,12 @@
+.dlist-group {
+  display: flex;
+  flex-flow: row wrap;
+
+  &--default {
+
+    .dlist-group__term,
+    .dlist-group__details {
+      flex: 0 1 50%;
+    }
+  }
+}

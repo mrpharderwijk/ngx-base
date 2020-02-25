@@ -1,0 +1,146 @@
+.list-group {
+  background: transparent;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .list-group-item {
+    background-color: transparent;
+    border-radius: 0 !important;
+    border: 0;
+    padding: 0;
+  }
+
+  &--horizontal {
+    flex-flow: row nowrap;
+
+    .list-group-item {
+      display: flex;
+      flex: 0 1 auto;
+      justify-content: center;
+    }
+  }
+
+  &--vertical {
+    flex-flow: column nowrap;
+  }
+
+  &--button-icon {
+    .list-group-item {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center;
+    }
+  }
+
+  &--icon-text {
+    .list-group-item {
+      flex: 0 1 100%;
+      margin-top: 1rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &__link {
+        background-color: transparent;
+        display: block;
+        padding: 5px 15px;
+        position: relative;
+        text-decoration: none;
+        white-space: nowrap;
+        width: 100%;
+
+        &:hover {
+          text-decoration: none;
+          font-weight: 0;
+        }
+
+        &__icon {
+          display: block;
+          text-align: center;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+        }
+
+        &__label {
+          display: block;
+          position: relative;
+          white-space: nowrap;
+          width: 100%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &--cta {
+    display: flex;
+    flex-flow: column wrap;
+
+    .list-group-item {
+      flex: 1 1 100%;
+      margin-top: toRem(16px);
+      padding: 0;
+
+      &:after {
+        background-color: $color-gray-light;
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin-top: toRem(16px);
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /**
+   * Autocomplete style
+   */
+  &--select {
+    background-color: $color-white;
+    border-color: $color-gray;
+    border-style: solid;
+    border-width: 0 toRem(1px) toRem(1px) toRem(1px);
+    width: 100%;
+    max-height: 13rem;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 10000;
+
+    .list-group__item {
+      border-bottom: toRem(1px) solid $color-gray;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      border: 0;
+      padding: 1rem 1.5rem;
+      text-align: left;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        background-color: $color-gray;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

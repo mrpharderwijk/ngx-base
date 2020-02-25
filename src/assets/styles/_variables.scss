@@ -1,0 +1,64 @@
+@function multiple-box-shadow($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+
+  @for $i from 2 through $n {
+    $value: '#{$value}, #{random(2000)}px #{random(2000)}px #FFF';
+  }
+
+  @return unquote($value);
+}
+
+$base-size: 16px;
+$color-white: #fff;
+
+// Main colors
+// $brand-primary: #360247;
+// $brand-primary-light: #600174;
+// $brand-secondary: #ffdf35;
+// $brand-secondary-dark: #f3ba00;
+$brand-primary: #bf2e32;
+$brand-primary-light: #ff5a5f;
+$brand-secondary: #6bcbc3;
+$brand-secondary-dark: #008489;
+
+// Black
+$color-black: #2b2b2b;
+$color-black-dark: #000000;
+
+// Blue
+$color-blue: #00b6f2;
+$color-blue-light: #6fbfe9;
+$color-blue-medium: #383c54;
+$color-blue-dark: #26293a;
+$color-blue-linked-in: #008cc9;
+
+$color-red: #dc3545;
+$color-yellow: #ffc107;
+$color-green: #2c7;
+$color-cyan: #17a2b8;
+
+// Gray
+$color-gray-default: #fafafa;
+$color-gray: #e6e6e8; // A very light gray for backgrounds
+$color-gray-lightest: #f9fafb;
+$color-gray-lighter: #ebebeb;
+$color-gray-light: #e4e4e4; // A slightly darker gray for borders, lines, strokes or dividers.
+$color-gray-medium: #767676; // A medium gray for subheadings and supporting body copy.
+$color-gray-dark: #72777a; // A dark gray for main headings, body copy and backgrounds.
+$color-gray-darker: #484848; // A darker gray for subheadings and supporting body copy.
+
+// Font colors
+$color-font-default: $color-gray-darker;
+$color-font-anchor-primary: $brand-primary;
+$color-font-anchor-secondary: $brand-secondary;
+
+// Alias gray
+$color-bg: $color-gray-default;
+$color-border: $color-gray-lighter;
+$color-sub: $color-gray-medium;
+$color-heading: $color-gray-dark;
+
+// Shadows
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);

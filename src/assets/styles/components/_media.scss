@@ -1,0 +1,31 @@
+.media {
+  display: flex;
+  align-items: center;
+
+  &__left {
+    display: flex;
+    flex: 0 1 auto;
+    width: toRem(50px);
+  }
+
+  &__right {
+    flex: 1 1 auto;
+    margin-left: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    color: $color-black;
+    margin-bottom: 0.3rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0;
+  }
+}

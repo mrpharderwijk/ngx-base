@@ -1,0 +1,28 @@
+.title {
+  overflow: hidden !important;
+  text-align: center !important;
+
+  &--lined {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:before,
+    &:after {
+      background-color: $color-gray-light;
+      content: '';
+      display: block;
+      flex: 1 1 auto;
+      height: 1px;
+    }
+    span {
+      background-color: $color-white;
+      color: $color-gray-medium;
+      display: inline-block;
+      flex: 0 1 auto;
+      font-size: 0.9rem;
+      font-weight: normal;
+      padding: 0 1.5rem;
+    }
+  }
+}

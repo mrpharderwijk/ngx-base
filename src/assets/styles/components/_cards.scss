@@ -1,0 +1,159 @@
+.mat-card {
+  border: 1px solid $color-border;
+  font-family: 'Quicksand';
+  padding: 0 !important;
+
+  .mat-card-header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    .mat-card-header-text {
+      margin: 0;
+      width: 100%;
+    }
+
+    .mat-card-title {
+      color: $color-heading;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem !important;
+    }
+  }
+
+  .mat-nav-list {
+    padding-top: 0 !important;
+  }
+
+  .mat-list-item-content {
+    padding: 0 !important;
+  }
+
+  &__title {
+    color: $color-black;
+    flex: 1 2 auto;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    text-transform: capitalize;
+
+    &:after {
+      background-color: $color-gray-medium;
+      content: '';
+      display: block;
+      margin: toRem(16px) 0 0 0;
+      width: toRem(56px);
+      height: toRem(2px);
+    }
+
+    &__options {
+      flex: 0 1 auto;
+    }
+  }
+
+  .card-body {
+    padding: toRem(32px) toRem(24px);
+  }
+
+  &--fluid {
+    margin-left: toRem(-15px);
+    margin-right: toRem(-15px);
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.mat-card--widget {
+  .mat-card-header {
+    padding: 1rem;
+    border-bottom: 1px solid $color-gray;
+
+    .mat-card-title {
+      color: $color-black;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.mat-card--auth,
+.mat-card--onboarding {
+  .mat-card-header-text {
+    text-align: center !important;
+  }
+  .mat-card-title {
+    color: $color-black !important;
+    font-size: 1.5rem !important;
+    font-weight: normal !important;
+    margin-bottom: 0 !important;
+  }
+  .mat-card-subtitle {
+    color: $color-black !important;
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
+    margin: 0 !important;
+  }
+
+  .mat-card-content {
+    padding: 1.5rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .mat-card__form {
+    width: 100%;
+
+    &__footer {
+      margin-top: 1rem;
+
+      button {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .mat-card-actions {
+    margin: 0 !important;
+    padding: 1rem 1.5rem 1.5rem 1.5rem !important;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    margin-bottom: 1.5rem;
+  }
+
+  .register {
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    border-top: 1px solid $color-gray-light;
+    text-align: left;
+    a {
+      margin-left: 0.25rem;
+      font-weight: bolder;
+    }
+  }
+}
+
+.mat-card--onboarding {
+  .mat-card-actions {
+    position: relative;
+    @include clearfix();
+
+    .button__prev {
+      float: left;
+    }
+
+    .button__next,
+    .button__skip {
+      float: right;
+    }
+  }
+}
+
+.tile {
+  background-color: $color-white;
+  border-radius: toRem(5px);
+  border: 1px solid $color-gray;
+  padding: toRem(24px) toRem(32px);
+}

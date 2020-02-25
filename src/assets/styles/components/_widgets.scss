@@ -1,0 +1,128 @@
+.widget {
+  padding: 0 !important;
+
+  .mat-card-header {
+    padding: 1rem;
+    border-bottom: 1px solid $color-gray;
+  }
+}
+
+.widget-list-item {
+  align-items: center;
+  border-bottom: 1px solid $color-gray;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+
+  &--success,
+  &--danger {
+    border-left-width: 3px;
+    border-left-style: solid;
+  }
+
+  &--success {
+    border-left-color: $color-green;
+  }
+  &--danger {
+    border-left-color: $color-red;
+  }
+
+  &:hover {
+    background-color: $color-gray;
+    text-decoration: none;
+  }
+  &--last {
+    border-bottom: 0px;
+  }
+
+  &--talents {
+    .widget-list-item__column {
+      &:first-child {
+        flex-basis: 50%;
+      }
+      &:nth-child(2) {
+        flex-basis: 30%;
+      }
+      &:last-child {
+        flex-basis: 20%;
+      }
+    }
+  }
+
+  &--jobs {
+    .widget-list-item__column {
+      flex: 1 1 auto;
+      &:last-child {
+        flex-basis: 0 1 auto;
+      }
+    }
+  }
+
+  &__column {
+    &:last-child {
+      align-self: flex-end;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .media__title {
+      color: $color-black;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .media__content {
+      color: $color-gray-dark;
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+    .content__icon {
+      font-size: 1rem;
+      color: $color-gray-medium;
+      width: auto;
+      height: auto;
+    }
+    .content__label {
+      color: $color-gray-medium;
+      font-size: 0.8rem;
+      margin-left: 0.25rem;
+      font-weight: lighter;
+    }
+
+    .list-group {
+      &__item {
+        margin-left: 1rem;
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__headline {
+    color: $color-gray-dark;
+    flex: 0 1 auto;
+  }
+
+  &__location {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+
+    &__icon {
+      font-size: 1rem;
+      color: $color-gray-medium;
+      width: auto;
+      height: auto;
+    }
+    &__label {
+      color: $color-gray-medium;
+      font-size: 0.8rem;
+      margin-left: 0.25rem;
+    }
+  }
+}

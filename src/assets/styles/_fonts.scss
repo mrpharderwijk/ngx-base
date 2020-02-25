@@ -1,0 +1,34 @@
+/**
+ * Quicksand
+ */
+@include font-face(
+  'Quicksand',
+  'assets/fonts/quicksand/quicksand-bold',
+  bolder,
+  null,
+  eot woff ttf svg
+);
+
+@include font-face(
+  'Quicksand',
+  'assets/fonts/quicksand/quicksand-medium',
+  bold,
+  null,
+  eot woff ttf svg
+);
+
+@include font-face(
+  'Quicksand',
+  'assets/fonts/quicksand/quicksand-light',
+  100,
+  null,
+  eot woff ttf svg
+);
+
+@include font-face(
+  'Quicksand',
+  'assets/fonts/quicksand/quicksand-regular',
+  null,
+  null,
+  eot woff ttf svg
+);

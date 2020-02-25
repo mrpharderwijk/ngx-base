@@ -1,0 +1,35 @@
+.search-select {
+  cursor: pointer;
+  position: relative;
+
+  &__field {
+    background-color: $color-white;
+    display: flex;
+    flex-flow: column nowrap;
+    height: toRem(80px);
+    padding-left: toRem(24px);
+    padding-right: toRem(24px);
+    justify-content: center;
+
+    &__label {
+      pointer-events: none;
+      color: $color-black;
+      font-size: toRem(12px);
+      font-weight: normal;
+    }
+
+    &__input {
+      color: $color-black;
+      font-size: toRem(14px);
+      font-weight: bolder;
+      overflow: hidden;
+      padding: 0.5rem 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &__placeholder {
+        color: $color-gray-light;
+      }
+    }
+  }
+}

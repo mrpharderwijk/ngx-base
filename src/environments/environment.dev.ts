@@ -1,3 +1,6 @@
 export const environment = {
-  production: false
+  production: false,
+  serviceUrls: {
+    base: 'http://localhost:9000/api',
+  },
 };
