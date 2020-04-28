@@ -1,5 +1,5 @@
 {
-  "name": "ngx-base",
+  "name": "bbapp",
   "version": "0.0.0",
   "scripts": {
     "build": "ng build --aot --prod",
@@ -40,6 +40,7 @@
     "@angular/router": "~9.0.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.4",
+    "rs-components": "git@gitlab.com:rocketsciencebv/rsbv-components.git#v1.0.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
