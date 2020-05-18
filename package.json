@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "ng build --aot --prod",
+    "build:lib": "cd node_modules/rs-components && npm install && npm run pack",
     "coverage": "http-server -c-1 -o -p 9875 ./coverage",
     "e2e": "ng e2e",
     "lint": "ng lint",
@@ -27,7 +28,6 @@
     "node": "12.16.1",
     "npm": "6.13.7"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.2",
     "@angular/common": "~9.0.2",
@@ -38,9 +38,9 @@
     "@angular/platform-browser": "~9.0.2",
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
+    "@rocketsciencebv/rs-components": "^1.0.4",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.4",
-    "rs-components": "git@gitlab.com:rocketsciencebv/rsbv-components.git#v1.0.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },

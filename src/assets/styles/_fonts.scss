@@ -32,3 +32,38 @@
   null,
   eot woff ttf svg
 );
+
+/**
+ * Montserrat
+ */
+// @include font-face(
+//   'Montserrat',
+//   'assets/fonts/montserrat/quicksand-bold',
+//   bolder,
+//   null,
+//   eot woff ttf svg
+// );
+
+@include font-face(
+  'Montserrat',
+  'assets/fonts/montserrat/montserrat-semibold',
+  bold,
+  null,
+  eot woff ttf svg
+);
+
+@include font-face(
+  'Montserrat',
+  'assets/fonts/montserrat/montserrat-thin',
+  100,
+  null,
+  eot woff ttf svg
+);
+
+@include font-face(
+  'Montserrat',
+  'assets/fonts/montserrat/montserrat-regular',
+  null,
+  null,
+  eot woff ttf svg
+);

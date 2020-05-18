@@ -23,10 +23,15 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets", "src/fonts"],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "stylePreprocessorOptions": {
-              "includePaths": ["./src", "./src/assets/css/"]
+              "includePaths": [
+                "./src",
+                "./src/assets/css/",
+                "./src/assets/fonts",
+                "./src/assets/images"
+              ]
             },
             "scripts": [],
             "es5BrowserSupport": true

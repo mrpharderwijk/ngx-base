@@ -6,10 +6,18 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
+import { RsComponentsModule } from '@rocketsciencebv/rs-components';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    SharedModule,
+    RsComponentsModule,
+  ],
   declarations: [AppComponent, MainComponent],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,75 @@
+@import 'src/assets/styles/variables';
+
+.section {
+  position: relative;
+
+  &--full {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &--centered {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--branding {
+    background-image: url('../../assets/images/monaco-marina.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:before {
+      background-color: $overlay-medium;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+    }
+  }
+}
+
+.branding {
+  display: flex;
+  flex-flow: column nowrap;
+  z-index: 200;
+  position: relative;
+
+  &__main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+
+    &__logo {
+      flex: 0 1 auto;
+      font-size: 7rem;
+      color: $color-white;
+    }
+
+    &__title {
+      color: $color-white;
+      flex: 1 1 auto;
+      margin-left: 1rem;
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__slogan {
+    color: $color-gray;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    font-size: 1rem;
+  }
+}

@@ -62,3 +62,14 @@ $color-heading: $color-gray-dark;
 $shadows-small: multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
+
+// Overlay
+$overlay-default: rgba(0, 0, 0, 0.15);
+$overlay-lightest: rgba(0, 0, 0, 0.05);
+$overlay-lighter: $overlay-default;
+$overlay-light: rgba(0, 0, 0, 0.2);
+$overlay-normal: rgba(0, 0, 0, 0.3);
+$overlay-medium: rgba(0, 0, 0, 0.5);
+$overlay-dark: rgba(0, 0, 0, 0.75);
+$overlay-darker: rgba(0, 0, 0, 0.8);
+$overlay-darkest: rgba(0, 0, 0, 0.9);
